@@ -1,9 +1,22 @@
 # Chef Upgrade and Migration environment
+## Enterprise Automation Stack Environment
 
 ## EAS based code to build an environment to demonstrate a Chef15 upgrade and Effortless Pattern Migration
 
 ### Supported Stories
 * Upgrade and Migration to Chef15/Effortless
+
+### Long Term Goals
+* Long running customer-like Chef environment
+* Long running customer-like Linux systems
+* Long running customer-like Windows systems
+* Deployable customer-like Linux / Windows systems
+    * Supporting multiple deployment targets
+
+### Target Use Cases
+* Internal solution development against customer-like systems
+* User acceptance for EAS patterns, features and issues
+* A demo environment for solutions internal stakeholders /external customers 
 
 ### Assumptions
 * this environment is like a long running customer environment
@@ -13,6 +26,16 @@
   * nodes checking in
   * everything managed
   * real certs / self signed too (to replicate reality)
+* contract is from customer to chef
+  * story is of top value
+* environment is shared across all users
+  * intent is to create customer (enterprise) empathy and expose flaws in our tools in customer-like environments
+* dev work in these environments may break the environment
+  * follow our own support protocols to restore service
+  * follow bug flow to remediate issues
+* can be used to validate break/fix
+* values solution approach approach over practitioner approach 
+
 
 ### Requirements
 * low overhead build that provides example to talk features or direction
