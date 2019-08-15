@@ -11,3 +11,9 @@
 *.tfstate*
 .terraform
 
+###
+# Ignore Chef key files and secrets
+###
+*.pem
+config.rb
+*.crt
