@@ -16,11 +16,6 @@ $ export TF_VAR_do_api_token=yourdigitaloceanapiwithoutquotes
 $ cd ~/path/to/repo/upgrade-migration-environment/terraform/digital-ocean
 ```
 
-3. Update `variables.tf` with the information used for provisioning.
-```
-$ vim variables.tf
-```
-
 4. Run terraform commands.
 ```
 $ terraform init
@@ -29,16 +24,13 @@ $ terraform plan
 $ terraform apply
 ```
 
-5. After the terraform applies successfully, copy the keys and `config.rb` to your local workstation. You'll need to replace `chef_server-public_ipv4` with the public IP that is in the output of the terraform run.
+5. After the terraform applies successfully it outputs an SCP command to download the credentials to communicate with the chef-server. The command should be copied and run from your terminal and looks something like this:
 ```shell
-$ scp root@chef_server-public_ipv4:"/tmp/*.pem /tmp/config.rb" .chef/
+$ scp root@CHEFSERVERIPADDRESS:"/tmp/*.pem /tmp/config.rb" .chef/
 ```
 
-6. Knife commands!
+6. Now knife commands that communicate with the Chef Server should work.
 ```
-$ cd ~/.chef
 $ knife ssl fetch
 $ knife client list
 ```
-
-If all goes well, you're communicating with the Chef Server.
