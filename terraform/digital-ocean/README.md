@@ -31,8 +31,7 @@ $ terraform apply
 
 5. After the terraform applies successfully, copy the keys and `config.rb` to your local workstation. You'll need to replace `chef_server-public_ipv4` with the public IP that is in the output of the terraform run.
 ```shell
-$ mkdir -p ~/.chef
-$ scp root@chef_server-public_ipv4:"/tmp/*.pem /tmp/config.rb" ~/.chef/
+$ scp root@chef_server-public_ipv4:"/tmp/*.pem /tmp/config.rb" .chef/
 ```
 
 6. Knife commands!
