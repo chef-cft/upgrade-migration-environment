@@ -1,17 +1,3 @@
-
-# ## Terraform
-# Terraform
-*.tfstate
-*.tfstate*
-.terraform
-
-###
-# Ignore Chef key files and secrets
-###
-*.pem
-config.rb
-*.crt
-
 ## Below are example of common git excludes.
 ## Please note that /cookbooks folder is ignored. This allows users to
 ## clone individual cookbooks into the /cookbook folder of the chef repo
@@ -136,9 +122,3 @@ nodes
 
 # ## Office Temp Files
 # ~$*
-*~
-*#
-.#*
-\#*#
-.*.sw[a-z]
-*.un~
