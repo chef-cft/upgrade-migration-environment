@@ -3,6 +3,26 @@
 
 ## EAS based code to build an environment to demonstrate a Chef15 upgrade and Effortless Pattern Migration
 
+### Quickstart
+
+#### Chef server setup
+  [Digital Ocean Chef Server](./terraform/digitalocean/README.md)  
+  [VMWare Chef Server](./terraform/vmware/README.md)
+
+#### Content setup
+  ```
+  cd chef-repo
+  berks install
+  berks upload --no-ssl-verify
+  knife role from file roles/base.rb
+  ```
+
+#### Bootstrap nodes
+  `knife bootstrap 167.71.245.237 -x root -i`
+
+#### First step of upgrade/migration
+1. `knife download cookbooks`
+
 ### Supported Stories
 * Upgrade and Migration to Chef15/Effortless
 
@@ -16,7 +36,7 @@
 ### Target Use Cases
 * Internal solution development against customer-like systems
 * User acceptance for EAS patterns, features and issues
-* A demo environment for solutions internal stakeholders /external customers 
+* A demo environment for solutions internal stakeholders /external customers
 
 ### Assumptions
 * this environment is like a long running customer environment
@@ -34,7 +54,7 @@
   * follow our own support protocols to restore service
   * follow bug flow to remediate issues
 * can be used to validate break/fix
-* values solution approach approach over practitioner approach 
+* values solution approach approach over practitioner approach
 
 
 ### Requirements
