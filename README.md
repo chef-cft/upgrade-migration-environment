@@ -3,6 +3,21 @@
 
 ## EAS based code to build an environment to demonstrate a Chef15 upgrade and Effortless Pattern Migration
 
+### Included Versions of Chef Software Packages
+| Package | Version |
+|---|---|
+| Chef Server | 12.1.2  |
+| (Chef) Opscode Manage |   |
+| ChefDK (Chef Workstation)  |   |
+| Chef Client |   |
+
+### In Use Versions of Non-Chef Software Packages
+| Package | Version |
+|---|---|
+| Terraform | latest  |
+| VSphere |   |
+| CentOS  |   |
+
 ### Quickstart
 
 #### Chef server setup
