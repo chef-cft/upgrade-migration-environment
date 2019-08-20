@@ -10,4 +10,4 @@ two maintainers to provide a :+1: on your pull request.
 * [Rob Campbell](https://github.com/rwc)
 * [Stephen Lauck](https://github.com/stephenlauck)
 * [Gina Peers](https://github.com/gpeers)
-* [Irving Popovetski](https://github.com/irvingpop)
+* [Irving Popovetsky](https://github.com/irvingpop)
