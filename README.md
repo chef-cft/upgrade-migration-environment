@@ -21,7 +21,7 @@
 ### Quickstart
 
 #### Chef server setup
-  [Digital Ocean Chef Server](./terraform/digitalocean/README.md)  
+  [Digital Ocean Chef Server](./terraform/digital-ocean/README.md)  
   [VMWare Chef Server](./terraform/vmware/README.md)
 
 #### Content setup
