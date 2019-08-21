@@ -45,7 +45,8 @@ variable "vsphere_user" {
   default = "administrator@success.chef.co"
 }
 
-variable "vsphere_password" {}
+variable "vsphere_password" {
+}
 
 # Chef Server
 variable "chef_user_id" {
@@ -77,3 +78,4 @@ variable "chef_org_longname" {
   description = "Long name of the Chef Organization to be created."
   default     = "Chef Migration Org"
 }
+
