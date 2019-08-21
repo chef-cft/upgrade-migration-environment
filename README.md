@@ -33,9 +33,10 @@
   ```
 
 #### Bootstrap nodes
-  `knife bootstrap 167.71.245.237 -x root -i`
+  There should be a way to bootstrap nodes with different chef-client versions.
 
 #### First step of upgrade/migration
+1. `./migration-assessment.rb terraform/vsphere/.chef/knife.rb`
 1. `knife download cookbooks`
 
 ### Supported Stories
