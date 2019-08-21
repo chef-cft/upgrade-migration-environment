@@ -4,6 +4,7 @@
 *.tfstate
 *.tfstate*
 .terraform
+*.tfvars
 
 ###
 # Ignore Chef key files and secrets
