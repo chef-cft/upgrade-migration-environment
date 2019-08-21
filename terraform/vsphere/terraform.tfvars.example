@@ -1,0 +1,3 @@
+vsphere_user = "myuser@success.chef.co"
+vsphere_password = "mypassword"
+vsphere_server = "vcenter.success.chef.co"
