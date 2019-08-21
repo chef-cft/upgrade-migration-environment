@@ -22,7 +22,7 @@
 
 #### Chef server setup
   [Digital Ocean Chef Server](./terraform/digital-ocean/README.md)  
-  [VMWare Chef Server](./terraform/vmware/README.md)
+  [VMWare Chef Server](./terraform/vsphere/README.md)
 
 #### Content setup
   ```
