@@ -38,7 +38,7 @@ resource "vsphere_virtual_machine" "chef_node1" {
       {
         "key": "value"
       }
-    
+
 EOF
 
 
@@ -55,4 +55,3 @@ EOF
     ssl_verify_mode = ":verify_none"
   }
 }
-
